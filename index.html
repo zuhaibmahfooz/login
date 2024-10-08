@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/signup assignment</title>
+    <link rel="icon" href="fitness2.png">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background: black;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main {
+            position: relative;
+            background: black;
+            width: 30%;
+            height: 70vh;
+            border-radius: 25px;
+            box-shadow: 0 0 50px #0ef;
+            padding: 45px;
+        }
+
+        .sign-in {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: xx-large;
+            padding-bottom: 13px;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-left: -39px;
+            font-weight: 700;
+        }
+
+        .input-group {
+            border-bottom: 2px solid #fff;
+            margin-left: -39px;
+            font-size: 15px;
+        }
+
+        .input-group label,
+        ::placeholder {
+            color: #fff;
+        }
+
+        .input-group input {
+            width: 110%;
+            padding: 7px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #fff;
+        }
+
+        .remember {
+            padding: -20px;
+            margin-left: -35px;
+            color: #fff;
+        }
+
+        .remember label input {
+            accent-color: aqua;
+            margin: 7px;
+        }
+
+        button {
+            text-align: center;
+            justify-content: center;
+            padding: 7px;
+            border: 2px solid transparent;
+            width: 125%;
+            margin-left: -45px;
+            border-radius: 20px;
+            background-color: aqua;
+            color: black;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .signup {
+            padding: 7px;
+        }
+
+        .signup,
+        p {
+            color: #fff;
+        }
+
+        .signup p a:hover {
+            text-decoration: underline;
+        }
+
+        .signup-link {
+            text-decoration: none;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sign-in">
+            <form action="">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for=""></label>
+                    <br>
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <label for=""></label>
+                    <br>
+                    <input type="password" placeholder="password" required>
+                </div>
+                <div class="input-group">
+                    <label for=""></label>
+                    <br>
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+                <br>
+                <div class="remember">
+                    <input type="checkbox">
+                    <label for="">Remember me</label>
+                </div>
+                <br>
+                <button>Login</button>
+                <div class="signup">
+                    <p>Don't have an account?<a href="personal portfolio  HMTL,CSS/portfolio.html" class="signup-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
