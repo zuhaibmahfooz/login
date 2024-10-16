@@ -2,39 +2,186 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>roughly work</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/signup assignment</title>
+    <link rel="icon" href="fitness2.png">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            background: black;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main {
+            position: relative;
+            background: black;
+            width: 30%;
+            height: 70vh;
+            border-radius: 25px;
+            box-shadow: 0px 0px 60px #0ef;
+            padding: 45px;
+        }
+
+        .main:hover {
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate {
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .sign-in {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            /* transition: 1s ease-in-out; */
+        }
+
+        /* .main.active .sign-in{
+            transform: translateY(-450px);
+        } */
+
+        h2 {
+            text-align: center;
+            font-size: xx-large;
+            padding-bottom: 13px;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-left: -39px;
+            font-weight: 700;
+        }
+
+        .input-group {
+            border-bottom: 2px solid #fff;
+            margin-left: -39px;
+            font-size: 15px;
+        }
+
+        .input-group label,
+        ::placeholder {
+            color: #fff;
+        }
+
+        .input-group input {
+            width: 110%;
+            padding: 7px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #fff;
+        }
+
+        .remember {
+            padding: -20px;
+            margin-left: -35px;
+            color: #fff;
+        }
+
+        .remember label input {
+            accent-color: aqua;
+            margin: 7px;
+        }
+
+        button {
+            text-align: center;
+            justify-content: center;
+            padding: 7px;
+            border: 2px solid transparent;
+            width: 125%;
+            margin-left: -45px;
+            border-radius: 20px;
+            background-color: aqua;
+            color: black;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .signup {
+            padding: 7px;
+        }
+
+        .signup,
+        p {
+            color: #fff;
+        }
+
+        .signup p a:hover {
+            text-decoration: underline;
+        }
+
+        .signup-link {
+            text-decoration: none;
+            color: aqua;
+        }
+
+        /* .signup {
+            padding: 7px;
+        }
+
+        .signup,
+        p {
+            color: #fff;
+        }
+
+        .signup p a:hover {
+            text-decoration: underline;
+        }
+
+        .signIn-link {
+            text-decoration: none;
+            color: aqua;
+        } */
+    </style>
 </head>
 
 <body>
-  <div id="father">
-    <!-- <h1>hello buddy!</h1> -->
-  </div>
-  <div id="hardwork">
-
-  </div>
-  <div id="success">
-    <!-- this is not working .? -->
-  </div>
-  <script>
-    const father = document.getElementById("father");
-    const heading = document.createElement("h1");
-    heading.innerText = "hello zuhaib! what are you doing as well?";
-    father.appendChild(heading);
-    
-    // this is a second method of js
-    const hardwork = document.getElementById("hardwork");
-    const paragraph = document.createElement("p");
-    paragraph.innerHTML = "this is a second line of java script";
-    hardwork.appendChild(paragraph);
-    
-    // this is a third java script
-    // const success = document.getElementById("success");
-    // const heading = document.createElement("h2");
-    // heading.innerHTML = "I never dreamt of success.I worked for it";
-    // react.appendChild(success);
-    </script>
+    <div class="main">
+        <div class="sign-in">
+            <form action="">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="Username"></label>
+                    <br>
+                    <input type="text" id="Username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <label for=""></label>
+                    <br>
+                    <input type="password" placeholder="password" required>
+                </div>
+                <div class="input-group">
+                    <label for=""></label>
+                    <br>
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+                <br>
+                <div class="remember">
+                    <input id="remember" type="checkbox">
+                    <label for="remember">Remember me</label>
+                </div>
+                <br>
+                <button>Login</button>
+                <div class="signup">
+                    <p>Don't have an account?<a href="personal portfolio  HMTL,CSS/portfolio.html"
+                            class="signup-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
